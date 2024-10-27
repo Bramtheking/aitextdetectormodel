@@ -5,8 +5,8 @@ import torch
 app = Flask(__name__)
 
 # Load model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("akshayvkt/detect-ai-text")
-model = AutoModelForSequenceClassification.from_pretrained("akshayvkt/detect-ai-text")
+tokenizer = AutoTokenizer.from_pretrained(".")
+model = AutoModelForSequenceClassification.from_pretrained(".")
 
 @app.route('/predict', methods=['POST'])
 def predict():
