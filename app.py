@@ -1,8 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
 app = Flask(__name__)
+
+# Enable CORS for all routes
+CORS(app)  # This will allow all origins
 
 # Load model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained(".")
