@@ -1,5 +1,5 @@
 {
-  "_name_or_path": "akshayvkt/detect-ai-text",
+  "_name_or_path": ".",
   "activation": "gelu",
   "architectures": [
     "DistilBertForSequenceClassification"
